@@ -1,6 +1,5 @@
-* Typora+Docsify使用指南
-  * [Docsify使用指南](/ProjectDocs/Docsify使用指南.md)
-  * [Typora+Docsify快速入门](/ProjectDocs/Typora+Docsify快速入门.md)
-* Docsify部署
-  * [Docsify部署教程](/ProjectDocs/Docsify部署教程.md)
+- 🤗Typora+Docsify使用指南
+  - [👀Docsify使用指南](/Project/Docsify使用指南.md)
+- 🤗遇到的java方法
+  * [👀java方法](/Project/java方法.md)
 
