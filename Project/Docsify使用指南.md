@@ -74,11 +74,11 @@ docsify serve Docsify-Guide
 |    主页内容渲染文件    |   README.md   |
 |       浏览器图标       |  favicon.ico  |
 
-
+![image-20220713150941599](images/image-20220713150941599.png)
 
 ## 基础配置项（index.html）
 
-> 下面是一份基础的配置项模板如下(可直接Copy使用)。
+> 下面是我的配置项模板，如下(可直接Copy使用)。
 
 ``` html
 <!DOCTYPE html>
@@ -91,7 +91,9 @@ docsify serve Docsify-Guide
     <meta name="description" content="Description">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  
+  <!-- 设置浏览器图标 -->
+    <link rel="icon" href="/222.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/222.ico" type="image/x-icon" />
     <!-- 默认主题 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 </head>
@@ -155,6 +157,10 @@ docsify serve Docsify-Guide
 
 
 
+> 下面对每个文件的具体配置进行讲解，index.html如果用了我的模版，就只需要改一点小细节了
+
+
+
 ## 封面配置文件（_coverpage.md）
 
 > [Docsify官网封面配置教程](https://docsify.js.org/#/zh-cn/cover)
@@ -174,22 +180,31 @@ docsify serve Docsify-Guide
 
 
 
-**_coverpage.md**
+**_coverpage.md**	我的模版
 
 ``` markdown
 <!-- _coverpage.md -->
 
-# Docsify使用指南 
+![1657628516106](images/1657628516106.png)
 
-> 💪Docsify使用指南，使用Typora+Docsify打造最强、最轻量级的个人&团队文档。
+# **ZOUZHAO BLOG**
 
- 简单、轻便 (压缩后 ~21kB)
-- 无需生成 html 文件
-- 众多主题
+# **走召的博客**
+
+>  书山有路勤为径
+
+ > 爱意东升西落，浪漫至死不渝。
+
+Love rises in the east and falls in the west, romance lasts till death.
+
+[GitHub](https://github.com/zouzhaozzzz )		[Gitee](https://gitee.com/zouzhaoz) 	[开始使用](/README.md)
 
 
-[开始使用 Let Go](/README.md)
 ```
+
+**效果展示**
+
+![image-20220713144544081](images/image-20220713144544081.png)
 
 
 
@@ -212,22 +227,25 @@ docsify serve Docsify-Guide
 
 > 在index.html基础配置文件中设置了二级目录
 
-![image-20211010133908643](images/image-20211010133908643.png)
 
-**_sidebar.md**
+
+**_sidebar.md**	我的模版
 
 ``` markdown
-<!-- _sidebar.md -->
+- 🤗Typora+Docsify使用指南
+  - [👀Docsify使用指南](/Project/Docsify使用指南.md)
+- 🤗遇到的java方法与函数
+  * [👀java方法函数整理](/Project/java方法/java方法.md)
 
-* Typora+Docsify使用指南
-  * [Docsify使用指南](/ProjectDocs/Docsify使用指南.md) <!--注意这里是相对路径-->
-  * [Typora+Docsify快速入门](/ProjectDocs/Typora+Docsify快速入门.md)
-* Docsify部署
-  * [Docsify部署教程](/ProjectDocs/Docsify部署教程.md)
-
+- 🤗作业代码
+  - [👀作业代码](/Project/code/作业代码.md)
 ```
 
-![image-20211010140836290](images/image-20211010140836290.png)
+**效果展示**
+
+![image-20220713144623319](images/image-20220713144623319.png)
+
+
 
 ## 导航栏配置文件（_navbar.md）
 
@@ -262,14 +280,63 @@ docsify serve Docsify-Guide
 
   - 🤣有待开发...
 
-  
 ```
+
+**效果展示**
+
+![image-20220713144746283](images/image-20220713144746283.png)
+
+
+
+## 设置浏览器图标
+
+~~~html
+<!-- 设置浏览器图标 -->
+    <link rel="icon" href="/222.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/222.ico" type="image/x-icon" />
+~~~
+
+**效果如下**
+
+![image-20220713150559566](images/image-20220713150559566.png)
 
 
 
 ## 全文搜索 - Search
 
 [全文搜索 - Search](https://docsify.js.org/#/zh-cn/plugins?id=全文搜索-search)
+
+**index.html**
+
+``` html
+<script>
+        // 搜索配置(url：https://docsify.js.org/#/zh-cn/plugins?id=%e5%85%a8%e6%96%87%e6%90%9c%e7%b4%a2-search)
+        window.$docsify = {
+            search: {
+                maxAge: 86400000,// 过期时间，单位毫秒，默认一天
+                paths: auto,// 注意：仅适用于 paths: 'auto' 模式
+                placeholder: '搜索',
+                // 支持本地化
+                placeholder: {
+                    '/zh-cn/': '搜索',
+                    '/': 'Type to search'
+                },
+                noData: '找不到结果',
+                depth: 4,
+                hideOtherSidebarContent: false,
+                namespace: 'Docsify-Guide',
+            }
+        }
+    </script>
+    <!-- docsify的js依赖 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <!-- 搜索功能支持 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+```
+
+**效果展示**
+
+![image-20220713145014860](images/image-20220713145014860.png)
 
 
 
@@ -278,6 +345,19 @@ docsify serve Docsify-Guide
 > 注意：切换主题只需要在根目录的index.html切换对应的主题css文件即可
 
 https://docsify.js.org/#/zh-cn/themes
+
+~~~html
+ <!-- 我的主题 -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+
+
+<!-- 官方提供的主题 -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/pure.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dolphin.css">
+~~~
 
 
 
