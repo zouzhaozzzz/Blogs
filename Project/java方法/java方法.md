@@ -1,5 +1,3 @@
-# java中遇到的方法与函数
-
 # 1、遇到的方法
 
 ##  split()---String数组的分割
@@ -100,7 +98,7 @@ sout(s.peek);
 
 ## Arrays.方法
 
-### Arrays.sort(数组[])--排序
+### 1 Arrays.sort(数组[])--排序
 
 想用sort函数做排序，有俩种表现方法：
 （设定好一个数组为num）
@@ -115,7 +113,7 @@ sout(s.peek);
 
 
 
-### Arrays.asList(数组[])--把数组转换为List
+### 2 Arrays.asList(数组[])--把数组转换为List
 
 ```java
 int[] a={1,2,3,4}; 
@@ -125,7 +123,7 @@ List<Integer> list=Arrays.asList(a);
 
 
 
-### Arrays.stream(数组).sum()/ --用流求int数组的sum值
+### 3 Arrays.stream(数组).sum()/ --用流求int数组的sum值
 
 ```jav
 输入:
@@ -137,7 +135,7 @@ System.out.println(  Arrays.stream(intArray).sum()  );
 
 
 
-### Arrays.stream(数组).average().getAsDouble() )--用流求int数组的average值
+### 4 Arrays.stream(数组).average().getAsDouble() )--用流求int数组的average值
 
 ```java
 输入:
@@ -149,7 +147,7 @@ System.out.println(  Arrays.stream(intArray).average().getAsDouble()  );
 
 
 
-### Arrays.asList,toArray--String数组与list相互转换
+### 5 Arrays.asList,toArray--String数组与list相互转换
 
 ```java
 	    String[] a={"1","2","3"};
@@ -169,6 +167,28 @@ System.out.println(  Arrays.stream(intArray).average().getAsDouble()  );
 2
 3
 ```
+
+
+
+### 6.Arrays.equals(数组)--判断数组是否相等
+
+~~~java
+import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) throws Exception {
+        int[] ary = {1,2,3,4,5,6};
+        int[] ary1 = {1,2,3,4,5,6};
+        int[] ary2 = {1,2,3,4};
+        System.out.println("数组 ary 是否与数组 ary1相等? ："
+        +Arrays.equals(ary, ary1));
+        System.out.println("数组 ary 是否与数组 ary2相等? ："
+        +Arrays.equals(ary, ary2));
+    }
+}
+以上代码运行输出结果为：
+数组 ary 是否与数组 ary1相等? ：true
+数组 ary 是否与数组 ary2相等? ：false
+~~~
 
 
 
@@ -236,10 +256,32 @@ arraylist.remove(int index)
 
 
 
+## instanceof--测试它左边的对象是否是它右边的类的实例
+
+~~~java
+public class Main {
+ 
+public static void main(String[] args) {
+   Object testObject = new ArrayList();
+      displayObjectClass(testObject);
+   }
+   public static void displayObjectClass(Object o) {
+      if (o instanceof Vector)
+      System.out.println("对象是 java.util.Vector 类的实例");
+      else if (o instanceof ArrayList)
+      System.out.println("对象是 java.util.ArrayList 类的实例");
+      else
+      System.out.println("对象是 " + o.getClass() + " 类的实例");
+   }
+}
+输出
+    对象是 java.util.ArrayList 类的实例
+~~~
 
 
 
 
-# 2、其他指令 
+
+# 2、其他 
 
 ## 刷新DNS解析缓存:ipconfig/flushdns 
