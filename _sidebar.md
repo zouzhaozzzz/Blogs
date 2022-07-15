@@ -1,16 +1,19 @@
+
+- 🤗遇到的java方法与函数
+  - [👀方法函数整理](/Project/java方法/java方法.md) 
+
+    
+  
+- 🤗经验总结
+  - [👀个人经验总结](/Project/经验总结.md)
+  
+  
+
 - 🤗Typora+Docsify使用指南
+  
   - [👀Docsify使用指南](/Project/Docsify使用指南.md)
   
     
-  
-- 🤗遇到的java方法与函数
-  - [👀java方法函数整理](/Project/java方法/java方法.md)
-  
-    
-  
-- 🤗遇到的java方法与函数
-  - [👀个人经验总结](/Project/经验总结.md)
-  
     
   
 - 🤗作业代码
