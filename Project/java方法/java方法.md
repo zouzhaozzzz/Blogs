@@ -204,13 +204,13 @@ Math.pow(a,b);
 
 ## Collections.resver(List<> list)--反转元素
 
-![1656935666063](C:\Users\zouzhao\AppData\Local\Temp\1656935666063.png)
+![1656935666063](images/1656935666063.png)
 
 
 
 ## Collections.swap(List<> list, int i, int j)--交换元素
 
-![1656938292172](C:\Users\zouzhao\AppData\Local\Temp\1656938292172.png)
+![1656938292172](images/1656938292172.png)
 
 
 
