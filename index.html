@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 	
 	<link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css"> 
+	
+
 </head>
 
 <body>
@@ -72,9 +74,14 @@
     <!--在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 		
+<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
 
-<script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
-	<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>`
      <script >
     var gitalk = new Gitalk({
       clientID: '437abba7ac9b3e22dd18',
@@ -82,11 +89,13 @@
       repo: 'Blogs',
       owner: 'zouzhaozzzz',
       admin: ['zouzhaozzzz'],
-      id: location.pathname,      // Ensure uniqueness and length less than 50
+      id: location.pathname,  
+distractionFreeMode: false	  // Ensure uniqueness and length less than 50
     })
 	
 </script>
 	
+
 	
 
 </body>
