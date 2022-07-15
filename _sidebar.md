@@ -1,28 +1,30 @@
-
-- 🤗遇到的java方法与函数
-  - [👀方法函数整理](/Project/java方法/java方法.md) 
-
-    
+>  🌺🌼🌼🌼导航栏🌼🌼🌼🌺
+- 🌼遇到的java方法与函数
   
-- 🤗经验总结
+  - [👀收藏的方法与函数](/Project/java方法/java方法.md)
+  
+  
+
+
+- 🌼经验总结
+  
   - [👀个人经验总结](/Project/经验总结.md)
   
   
+  
+- 🌼Typora+Docsify使用指南
 
-- 🤗Typora+Docsify使用指南
-  
   - [👀Docsify使用指南](/Project/Docsify使用指南.md)
-  
+
     
-    
-  
-- 🤗作业代码
+
+- 🌼作业代码
   - [👀作业代码](/Project/code/作业代码.md)
-  
+
     
-  
-- 🤗课堂笔记
-  
+
+- 🌼课堂笔记
+
   - [👀第1章 计算机语言与常用的DOS命令](/Project/笔记/chapter-1章/chapter-1章.md)
   - [👀第2章 java语言、jdk、编码规范](/Project/笔记/chapter-2章/chapter-2章.md)
   - [👀第3章 常量、变量、运算符、类型转换](/Project/笔记/chapter-3章/chapter-3章.md)
