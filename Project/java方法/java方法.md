@@ -285,3 +285,10 @@ public static void main(String[] args) {
 # 2、其他 
 
 ## 刷新DNS解析缓存:ipconfig/flushdns 
+
+
+
+
+
+
+

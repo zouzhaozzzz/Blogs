@@ -14,8 +14,6 @@
     <!-- 默认主题 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 	
-	<link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css"> 
-	
 
 </head>
 
@@ -42,6 +40,8 @@
             // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级（建议配置为2-4）
             subMaxLevel: 5,
 			
+			mergeNavbar: true,
+			
 		plugins: [
         /*来必力评论*/
         function (hook, vm) {
@@ -66,6 +66,7 @@
 
         }
     </script>
+	
     <script>
         // 搜索配置(url：https://docsify.js.org/#/zh-cn/plugins?id=%e5%85%a8%e6%96%87%e6%90%9c%e7%b4%a2-search)
         window.$docsify = {
@@ -94,40 +95,27 @@
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
     <!--在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-		
+	
+<!-- 缓存 -->	
 <script>
   if (typeof navigator.serviceWorker !== 'undefined') {
     navigator.serviceWorker.register('sw.js')
   }
 </script>
 
-<!-- Gitalk 评论系统 -->
-<link rel="stylesheet" href="https://wugenqiang.gitee.io/notebook/plugin/gitalk.css">
-<!-- Gitalk 评论系统 -->
-<script src="https://wugenqiang.gitee.io/notebook/plugin/gitalk.js"></script>
-<script src="https://wugenqiang.gitee.io/notebook/plugin/gitalk.min.js"></script>
-<script src="https://wugenqiang.gitee.io/notebook/plugin/md5.min.js"></script>
-<script>
-  // title_id需要初始化
-  window.title_id = window.location.hash.match(/#(.*?)([?]|$)/) ? window.location.hash.match(/#(.*?)([?]|$)/)[1] : '/';
-  const gitalk = new Gitalk({
-    clientID: '437abba7ac9b3e22dd18',
-    clientSecret: 'bb16318f47cbd85b7e0bdc892ba2bf033f3b2b69',
-    repo: 'UseGitTalk',
-    owner: 'zouzhaozzzz',
-    admin: ['zouzhaozzzz'],
-    title: decodeURI(window.title_id),
-    distractionFreeMode: false, // 是否添加全屏遮罩
-    id: md5(window.location.hash),  // 页面的唯一标识，gitalk 会根据这个标识自动创建的issue的标签,我们使用页面的相对路径作为标识
-    enableHotKey: true, // 提交评论快捷键(cmd/ctrl + enter)
-  })
-  // 监听URL中hash的变化，如果发现换了一个MD文件，那么刷新页面，解决整个网站使用一个gitalk评论issues的问题。
-  window.onhashchange = function (event) {
-    if (event.newURL.split('?')[0] !== event.oldURL.split('?')[0]) {
-      location.reload()
-    }
-  }
-</script>
+<script src="https://wugenqiang.github.io/CS-Notes/plugin/jquery.js"></script>
+  <script src="https://wugenqiang.github.io/CS-Notes/plugin/jquery.goup.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+      $.goup({
+        trigger: 100,
+        bottomOffset: 32,
+        locationOffset: 32,
+        title: 'TOP',
+        titleAsText: true
+      });
+    });
+  </script>
 
 
 
