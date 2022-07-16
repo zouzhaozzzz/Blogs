@@ -42,7 +42,28 @@
             // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级（建议配置为2-4）
             subMaxLevel: 5,
 			
-		
+		plugins: [
+        /*来必力评论*/
+        function (hook, vm) {
+          // load livere
+          hook.beforeEach(function(content) {
+            var comment = "<div id='lv-container' data-id='city' data-uid='MTAyMC80MzA4MC8xOTYyNg=='></div>\n\n----\n"
+            return content + comment;
+          });
+
+          hook.doneEach(function() {
+            (function(d, s) {
+              var j, e = d.getElementsByTagName(s)[0];
+              if (typeof LivereTower === 'function') { return; }
+              j = d.createElement(s);
+              j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+              j.async = true;
+              e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+          });
+        },
+      ]
+
         }
     </script>
     <script>
@@ -80,22 +101,25 @@
   }
 </script>
 
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>`
-     <script >
-    var gitalk = new Gitalk({
-      clientID: '437abba7ac9b3e22dd18',
-      clientSecret: 'bb16318f47cbd85b7e0bdc892ba2bf033f3b2b69',
-      repo: 'UseGitTalk',
-      owner: 'zouzhaozzzz',
-      admin: ['zouzhaozzzz'],
-      id: location.pathname,  
-distractionFreeMode: false	  // Ensure uniqueness and length less than 50
-    })
-	
-</script>
-	
 
+	
+<!--回到顶部-->
+<script src="https://wugenqiang.github.io/CS-Notes/plugin/jquery.js"></script>
+  <script src="https://wugenqiang.github.io/CS-Notes/plugin/jquery.goup.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.goup({
+        trigger: 100,
+        bottomOffset: 32,
+        locationOffset: 32,
+        title: 'TOP',
+        titleAsText: true
+      });
+    });
+  </script>
+
+  <!-- mouse click -->
+<script src="//cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/click_heart.js"></script>
 	
 
 </body>
