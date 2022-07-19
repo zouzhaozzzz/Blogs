@@ -280,6 +280,16 @@ public static void main(String[] args) {
 
 
 
+## String 常用方法
+
+​	![image-20220719170416407](images/image-20220719170416407.png)
+
+![image-20220719170427498](images/image-20220719170427498.png)![image-20220719170434278](images/image-20220719170434278.png)![image-20220719170442348](images/image-20220719170442348-16582214860631.png)
+
+
+
+
+
 
 
 # 2、其他 
