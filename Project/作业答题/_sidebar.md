@@ -7,8 +7,9 @@
 
 
 - 🌼作业答题
-  - [👀一、面向对象笔试题](/Project/作业答题/作业答题.md)
-  - [👀二、常用类笔试题](/Project/作业答题/作业2.md)
+  - [👀一、chapter5-8面向对象笔试题](/Project/作业答题/作业答题.md)
+  - [👀二、chapter9常用类笔试题](/Project/作业答题/作业2.md)
+  - [👀三、chapter10集合框架习题](/Project/作业答题/chapter10集合.md)
 
 
 
