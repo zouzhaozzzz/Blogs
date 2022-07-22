@@ -46,7 +46,7 @@ sout(s.peek);
 
 ## 🔻Arrays类(用A代替Arrays,int[]代替数组)
 
-### 🔸A.toString(int[])方法
+### A.toString(int[])方法
 
 方法作用：快速输出数组内容，可以偷偷懒🌚
 
@@ -60,7 +60,7 @@ System.out.println(Arrays.toString(a));
 
 
 
-### 🔸A.sort(int[])-数组排序
+### A.sort(int[])-数组排序
 
 想用sort函数做排序，有俩种表现方法：
 （设定好一个数组为num）new int[]
@@ -75,7 +75,7 @@ System.out.println(Arrays.toString(a));
 
 
 
-### 🔸A.equals(int[],int[])方法
+### A.equals(int[],int[])方法
 
 方法作用：比较两个数组内容是否相等
 
@@ -89,7 +89,7 @@ boolean isSame = Arrays.equals(a,b);
 注意：Arrays.equals()是比较数组内容，而a.equals(b) 这样的方法是比较地址值
 
 
-### 🔸A.asList(int[])-把数组转换为List
+### A.asList(int[])-把数组转换为List
 
 ```java
 int[] a={1,2,3,4}; 
@@ -99,7 +99,7 @@ List<Integer> list=Arrays.asList(a);
 
 
 
-### 🔸A.binarySearch(int[],int)-获得指定对象在数组中的索引
+### A.binarySearch(int[],int)-获得指定对象在数组中的索引
 
  使用二分搜索法，以获得指定对象在数组中的索引
 
@@ -123,9 +123,9 @@ List<Integer> list=Arrays.asList(a);
 
 
 
-### 🔸A.stream(int[]).sum() -用流求int数组的sum值
+### A.stream(int[]).sum() -用流求int数组的sum值
 
-```jav
+```java
 输入:
 int[] intArray = {1, 2, 3, 4, 5};
 System.out.println(  Arrays.stream(intArray).sum()  );
@@ -135,7 +135,7 @@ System.out.println(  Arrays.stream(intArray).sum()  );
 
 
 
-### 🔸A.stream(int[]).average().getAsDouble() )-用流求int数组的average值
+### A.stream(int[]).average().getAsDouble() )-用流求int数组的average值
 
 ```java
 输入:
@@ -147,7 +147,7 @@ System.out.println(  Arrays.stream(intArray).average().getAsDouble()  );
 
 
 
-### 🔸A.asList/toArray-数组与list相互转换
+### A.asList/toArray-数组与list相互转换
 
 ```java
 String[] a={"1","2","3"};
@@ -169,7 +169,7 @@ ArrayList<String> lsit = new ArrayList<>(Arrays.asList(a));
 
 
 
-### 🔸A.equals(int[],int[])-判断数组是否相等
+### A.equals(int[],int[])-判断数组是否相等
 
 ~~~java
 import java.util.Arrays;
@@ -191,7 +191,7 @@ public class Main {
 
 
 
-### 🔸A.copyOf(int[])/copyOfRange(int[],int,int)-拷贝数组
+### A.copyOf(int[])/copyOfRange(int[],int,int)-拷贝数组
 
 1、copyof方法作用：拷贝数组
 
@@ -224,7 +224,7 @@ public static void main(String[] args) {
 
 
 
-### 🔸A.sort()-数组降序排序
+### A.sort()-数组降序排序
 
 跟Collections.sort()思想一样哦
 
@@ -258,13 +258,13 @@ public class Test {
 
 ## 🔻Collections类（用C代替Collections,List代替集合）
 
-### 🔸C.resver(List)-反转元素
+### C.resver(List)-反转元素
 
 ![1656935666063](images/1656935666063.png)
 
 
 
-### 🔸C.shuffle(List)-随机排序
+### C.shuffle(List)-随机排序
 
 ~~~java
  List<String> list = Arrays.asList("a", "b", "c", "d", "e");
@@ -279,19 +279,19 @@ System.out.println("shuffle后顺序：\t" + list)
 
 
 
-### 🔸C.swap(List,int,int)-交换元素
+### C.swap(List,int,int)-交换元素
 
 ![1656938292172](images/1656938292172.png)
 
 
 
-### 🔸C.sort(List)-对List里的元素根据自然升序排序
+### C.sort(List)-对List里的元素根据自然升序排序
 
 Collections.sort(list);	//自然排序
 
 
 
-### 🔸C.sort(List,Comparator)-自定义比较器进行排序
+### C.sort(List,Comparator)-自定义比较器进行排序
 
 - 第一种方法,让需要比较的类实现comparable（不推荐）
 
@@ -357,7 +357,7 @@ Main.class
 
 
 
-### 🔸C.binarySearch(List,Object)-获得指定对象在List中的索引
+### C.binarySearch(List,Object)-获得指定对象在List中的索引
 
  使用二分搜索法，以获得指定对象在List中的索引
 
@@ -367,7 +367,7 @@ Main.class
 
 
 
-### 🔸C.max(List)/min(List)-可以加比较器最大最小
+### C.max(List)/min(List)-可以加比较器最大最小
 
 1、max(Collection coll, Comparator comp)
 
@@ -391,7 +391,7 @@ Main.class
 
 ## 🔻Math类
 
-### 🔸Math.pow(a,b)--a的b次方
+### Math.pow(a,b)--a的b次方
 
 ```java
 Math.pow(a,b); 
@@ -399,7 +399,7 @@ Math.pow(a,b);
 
 
 
-### 🔸Math.abs()-绝对值
+### Math.abs()-绝对值
 
 Math.abs(param) 返回参数的绝对值。参数可以是 int, float, long, double, short, byte类型。 
 
@@ -465,7 +465,7 @@ public static void main(String[] args) {
 
 
 
-## 🔻String 常用方法
+## 🔻String 常用方法(用str代替String str)
 
 ​	![image-20220719170416407](images/image-20220719170416407.png)
 
@@ -473,13 +473,13 @@ public static void main(String[] args) {
 
 
 
-## 🔸matches()---String字符串的匹配字符串 
+### str.matches()---String字符串的匹配字符串 
 
 matches() 方法用于检测字符串是否匹配给定的正则表达式。
 
 语法
 
-```
+```java
 public boolean matches(String regex)
 ```
 
@@ -493,7 +493,7 @@ public boolean matches(String regex)
 
 实例
 
-```
+```java
 public class Test {
     public static void main(String args[]) {
         String Str = new String("www.runoob.com");
@@ -508,7 +508,9 @@ public class Test {
         System.out.println(Str.matches("www(.*)"));
     }
 }
-
+返回值 :true
+返回值 :false
+返回值 :true
 
 String a="12-12+34-5/2";
         String[] b=a.split("- | / | \\+ ");
@@ -519,13 +521,7 @@ String a="12-12+34-5/2";
         System.out.println(matches);
 ```
 
-以上程序执行结果为：
 
-```
-返回值 :true
-返回值 :false
-返回值 :true
-```
 
 
 
