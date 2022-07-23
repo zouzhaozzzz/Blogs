@@ -2,7 +2,7 @@
 
 # 一、遇到的方法
 
-## 🔻split()-String数组的分割
+## 🎐split()-String数组的分割
 
 Split(expression[, delimiter[, count[, compare]]])
 
@@ -30,7 +30,7 @@ strs[3]=8;
 
 
 
-## 🔻peek-观察stack栈顶元素
+## 🎐peek-观察stack栈顶元素
 
 ~~~java
 Stacck<String> s=new Stack<String>();
@@ -44,7 +44,7 @@ sout(s.peek);
 
 
 
-## 🔻Arrays类(用A代替Arrays,int[]代替数组)
+## 🎐Arrays类(用A代替Arrays,int[]代替数组)
 
 ### A.toString(int[])方法
 
@@ -256,7 +256,7 @@ public class Test {
 
 
 
-## 🔻Collections类（用C代替Collections,List代替集合）
+## 🎐Collections类（用C代替Collections,List代替集合）
 
 ### C.resver(List)-反转元素
 
@@ -389,7 +389,7 @@ Main.class
 
 
 
-## 🔻Math类
+## 🎐Math类
 
 ### Math.pow(a,b)--a的b次方
 
@@ -405,67 +405,9 @@ Math.abs(param) 返回参数的绝对值。参数可以是 int, float, long, dou
 
 
 
-## 🔻remove() 方法-删除单个元素或索引位的元素
-
-~~~java
-// 删除指定元素
-arraylist.remove(Object obj)
-
-// 删除指定索引位置的元素
-arraylist.remove(int index)
-~~~
 
 
-
-## 🔻HashMap getOrDefault(Object key, V defaultValue)-获取指定 value找不到放回default
-
-```java
-		HashMap<Integer, String> sites = new HashMap<>();
-
-        // 往 HashMap 添加一些元素
-        sites.put(1, "Google");
-        sites.put(2, "Runoob");
-        sites.put(3, "Taobao");
-        System.out.println("sites HashMap: " + sites);
-
-        // key 的映射存在于 HashMap 中
-        // Not Found - 如果 HashMap 中没有该 key，则返回默认值
-        String value1 = sites.getOrDefault(1, "Not Found");
-        System.out.println("Value for key 1:  " + value1);
-
-        // key 的映射不存在于 HashMap 中
-        // Not Found - 如果 HashMap 中没有该 key，则返回默认值
-        String value2 = sites.getOrDefault(4, "Not Found");
-        System.out.println("Value for key 4: " + value2);
-```
-
-
-
-## 🔻instanceof-测试它左边的对象是否是它右边的类的实例
-
-~~~java
-public class Main {
- 
-public static void main(String[] args) {
-   Object testObject = new ArrayList();
-      displayObjectClass(testObject);
-   }
-   public static void displayObjectClass(Object o) {
-      if (o instanceof Vector)
-      System.out.println("对象是 java.util.Vector 类的实例");
-      else if (o instanceof ArrayList)
-      System.out.println("对象是 java.util.ArrayList 类的实例");
-      else
-      System.out.println("对象是 " + o.getClass() + " 类的实例");
-   }
-}
-输出
-    对象是 java.util.ArrayList 类的实例
-~~~
-
-
-
-## 🔻String 常用方法(用str代替String str)
+## 🎐String 常用方法(用str代替String str)
 
 ​	![image-20220719170416407](images/image-20220719170416407.png)
 
@@ -522,6 +464,64 @@ String a="12-12+34-5/2";
 ```
 
 
+
+## 🎐remove() 方法-删除单个元素或索引位的元素
+
+~~~java
+// 删除指定元素
+arraylist.remove(Object obj)
+
+// 删除指定索引位置的元素
+arraylist.remove(int index)
+~~~
+
+
+
+## 🎐HashMap getOrDefault(Object key, V defaultValue)-获取指定 value找不到放回default
+
+```java
+		HashMap<Integer, String> sites = new HashMap<>();
+
+        // 往 HashMap 添加一些元素
+        sites.put(1, "Google");
+        sites.put(2, "Runoob");
+        sites.put(3, "Taobao");
+        System.out.println("sites HashMap: " + sites);
+
+        // key 的映射存在于 HashMap 中
+        // Not Found - 如果 HashMap 中没有该 key，则返回默认值
+        String value1 = sites.getOrDefault(1, "Not Found");
+        System.out.println("Value for key 1:  " + value1);
+
+        // key 的映射不存在于 HashMap 中
+        // Not Found - 如果 HashMap 中没有该 key，则返回默认值
+        String value2 = sites.getOrDefault(4, "Not Found");
+        System.out.println("Value for key 4: " + value2);
+```
+
+
+
+## 🎐instanceof-测试它左边的对象是否是它右边的类的实例
+
+~~~java
+public class Main {
+ 
+public static void main(String[] args) {
+   Object testObject = new ArrayList();
+      displayObjectClass(testObject);
+   }
+   public static void displayObjectClass(Object o) {
+      if (o instanceof Vector)
+      System.out.println("对象是 java.util.Vector 类的实例");
+      else if (o instanceof ArrayList)
+      System.out.println("对象是 java.util.ArrayList 类的实例");
+      else
+      System.out.println("对象是 " + o.getClass() + " 类的实例");
+   }
+}
+输出
+    对象是 java.util.ArrayList 类的实例
+~~~
 
 
 
