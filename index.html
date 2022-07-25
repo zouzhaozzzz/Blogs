@@ -19,7 +19,6 @@
 <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
 
 
-
 </head>
 
 <body>
@@ -259,7 +258,76 @@
 <!-- java代码亮 -->
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-java.min.js"></script>
 
+<!-- 运行时间统计 -->
+<script language=javascript>
+  function siteTime() {
+    window.setTimeout("siteTime()", 1000);
+    var seconds = 1000;
+    var minutes = seconds * 60;
+    var hours = minutes * 60;
+    var days = hours * 24;
+    var years = days * 365;
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth() + 1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+    year - 作为date对象的年份，为4位年份值
+    month - 0-11之间的整数，做为date对象的月份
+    day - 1-31之间的整数，做为date对象的天数
+    hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+    minutes - 0-59之间的整数，做为date对象的分钟数
+    seconds - 0-59之间的整数，做为date对象的秒数
+    microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+    var t1 = Date.UTC(2022, 07, 11, 17, 38, 00); //北京时间2020-02-10 00:00:00
+    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+    var diff = t2 - t1;
+    var diffYears = Math.floor(diff / years);
+    var diffDays = Math.floor((diff / days) - diffYears * 365);
+    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+    document.getElementById("sitetime").innerHTML = " 本网站已运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒 ";
+  }
+  siteTime();
+</script>
+
+<!-- 页面提示 -->
+<script type=”text/javascript”>
+$(function(){
+var tongzhi=GetCookie(‘tongzhitankuang’);
+if (1 !=tongzhi) {
+//tongzhitankuang();
+}
+});
+function tongzhitankuang()
+{
+//询问框
+var content=”温馨提示：亲爱的织梦58用户，本站拟在本月26号(周一)起闭站重新备案，期间启用临时域名<font color=’red’>（<a href=http://blog.aftss.cn/a/zhimengjiaocheng/zhanchangshouji/2019/1011/’http://blog.aftss.cn’ target=’_blank’ style=’color:red;’>http://blog.aftss.cn</a>）</font>供大家正常使用！”;
+layer.confirm(content, {
+title: false
+,area: [‘320px’,’auto’]
+,btn: [‘知道了’] //按钮
+,end: function(index, layero){
+SetCookie(‘tongzhitankuang’, 1);
+return false;
+}
+}, function(){
+layer.closeAll();
+}
+);
+}
+</script>
+
+
 
 </body>
+
+
+
+
 
 </html>

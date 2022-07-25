@@ -1,5 +1,7 @@
 <!-- _navbar.md -->
 
+- 网站运行时间：<span id="sitetime"></span>
+
 - 👇链接到我👇			 
   - [🤣github地址](https://github.com/zouzhaozzzz)
   - [🤣Gitee地址](https://gitee.com/zouzhaoz)   
