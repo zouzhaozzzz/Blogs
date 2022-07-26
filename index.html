@@ -295,37 +295,11 @@
   siteTime();
 </script>
 
-<!-- 页面提示 -->
-<script type=”text/javascript”>
-$(function(){
-var tongzhi=GetCookie(‘tongzhitankuang’);
-if (1 !=tongzhi) {
-//tongzhitankuang();
-}
-});
-function tongzhitankuang()
-{
-//询问框
-var content=”温馨提示：亲爱的织梦58用户，本站拟在本月26号(周一)起闭站重新备案，期间启用临时域名<font color=’red’>（<a href=http://blog.aftss.cn/a/zhimengjiaocheng/zhanchangshouji/2019/1011/’http://blog.aftss.cn’ target=’_blank’ style=’color:red;’>http://blog.aftss.cn</a>）</font>供大家正常使用！”;
-layer.confirm(content, {
-title: false
-,area: [‘320px’,’auto’]
-,btn: [‘知道了’] //按钮
-,end: function(index, layero){
-SetCookie(‘tongzhitankuang’, 1);
-return false;
-}
-}, function(){
-layer.closeAll();
-}
-);
-}
-</script>
+
 
 
 
 </body>
-
 
 
 
