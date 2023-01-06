@@ -2,7 +2,6 @@
 
  >  🌺🌼🌼🌼导航栏🌼🌼🌼🌺
  >
- >  🌺扩大网页观看文字更佳哦🌺
 - 🌼遇到的java方法与函数
   
   - [收藏的方法与函数](/Project/java方法/java方法.md)
@@ -12,15 +11,13 @@
 
 - 🌼经验总结
   
-  - [经验总结与上课笔记](/Project/总结/经验总结.md)
+  - [经验总结与笔记](/Project/总结/经验总结.md)
+  - [多线程](/Project/总结/多线程.md)
+  - [Linux](/Project/总结/Linux.md)
+  - [项目总结](/Project/总结/项目总结.md)
+  - [学习工作日志](/Project/总结/学习工作日志.md)
 
 
-
-
-- 🌼课后作业答题
-  - [作业答题](/Project/作业答题/作业答题.md)
-
-  
 
 
 - 🌼Typora+Docsify使用指南
@@ -29,7 +26,7 @@
 
     
 
-- 🌼老师笔记
+- 🌼笔记
 
   - [第1章 计算机语言与常用的DOS命令](/Project/笔记/chapter-1章/chapter-1章.md)
   - [第2章 java语言、jdk、编码规范](/Project/笔记/chapter-2章/chapter-2章.md)
