@@ -70,7 +70,7 @@ sudo ssh-keygen -A
 systemctl enable ssh
 ```
 
-### 3. 进程查询
+## 3. 进程查询
 
 ```shell
 # 查询进程及相应的编号
@@ -212,7 +212,7 @@ server {
 sudo nginx -s reload
 ```
 
-### 9. 部署后端项目
+## 9. 部署后端项目
 
 首先修改`application.yml`中的url为MySQL所在服务器的IP
 
@@ -275,7 +275,7 @@ export const http = axios.create({
 
 
 
-## 9、配置
+## 10.配置
 
 ### 操作
 
